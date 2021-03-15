@@ -194,7 +194,7 @@ class JacocoCoverageTaskTest extends Specification {
                               new CoverageViolation("org/somepackage/AnotherClass", 0, 1.0, 1, CoverageType.CLASS)]
     }
 
-    def "Thresholds can be defined for all scopes at once"() {
+    def "Thresholds  can be defined for all scopes at once"() {
         when:
         extension.threshold(CoverageRealm.FILE, 0.5, "AnotherClass.java")
         extension.threshold(CoverageRealm.CLASS, 0.9, ~"org/somepackage/Dummy.*")
