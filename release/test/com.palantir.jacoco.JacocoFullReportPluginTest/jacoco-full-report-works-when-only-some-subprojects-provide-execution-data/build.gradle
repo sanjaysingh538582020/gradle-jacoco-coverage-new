@@ -1,0 +1,12 @@
+// Running test for jacoco-full-report-works-when-only-some-subprojects-provide-execution-data
+apply plugin: "com.palantir.jacoco-full-report"
+allprojects {
+    apply plugin: 'java'
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        testCompile "junit:junit:4.11"
+    }
+}

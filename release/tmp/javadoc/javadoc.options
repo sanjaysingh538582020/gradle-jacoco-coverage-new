@@ -1,0 +1,9 @@
+-classpath 'E:\\Learning\\gradle-jacoco-coverage-new\\build\\classes\\java\\main;E:\\Learning\\gradle-jacoco-coverage-new\\build\\classes\\groovy\\main;E:\\Learning\\gradle-jacoco-coverage-new\\build\\resources\\main;C:\\Users\\Sanjay Singh\\.gradle\\caches\\4.5\\generated-gradle-jars\\gradle-api-4.5.jar;C:\\Program Files\\gradle-4.5\\lib\\groovy-all-2.4.12.jar;C:\\Program Files\\gradle-4.5\\lib\\gradle-installation-beacon-4.5.jar;C:\\Users\\Sanjay Singh\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\guava\\18.0\\cce0823396aa693798f8882e64213b1772032b09\\guava-18.0.jar'
+-d 'E:\\Learning\\gradle-jacoco-coverage-new\\build\\docs\\javadoc'
+-doctitle 'jacoco-coverage master-57-g6814f22a2474 API'
+-quiet 
+-windowtitle 'jacoco-coverage master-57-g6814f22a2474 API'
+'E:\\Learning\\gradle-jacoco-coverage-new\\src\\main\\groovy\\com\\palantir\\jacoco\\CoverageCounter.java'
+'E:\\Learning\\gradle-jacoco-coverage-new\\src\\main\\groovy\\com\\palantir\\jacoco\\CoverageObservation.java'
+'E:\\Learning\\gradle-jacoco-coverage-new\\src\\main\\groovy\\com\\palantir\\jacoco\\CoverageRealm.java'
+'E:\\Learning\\gradle-jacoco-coverage-new\\src\\main\\groovy\\com\\palantir\\jacoco\\CoverageType.java'

@@ -1,0 +1,3 @@
+rootProject.name='jacoco-full-report-works-when-only-some-subprojects-provide-execution-data'
+include 'testFooA'
+include 'testFooB'
