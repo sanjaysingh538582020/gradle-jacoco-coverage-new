@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.palantir.jacoco.JacocoFullReportPluginTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2021-03-15T19:34:57" hostname="DESKTOP-377GUP4" time="0.116">
+  <properties/>
+  <testcase name="jacoco-full-report can exclude sub projects" classname="com.palantir.jacoco.JacocoFullReportPluginTest" time="0.043">
+    <failure message="java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.getClasspathAsFiles(ClasspathAddingInitScriptBuilder.groovy:40)
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.build(ClasspathAddingInitScriptBuilder.groovy:18)
+	at nebula.test.functional.internal.classpath.ClasspathInjectingGradleHandleFactory.start(ClasspathInjectingGradleHandleFactory.groovy:29)
+	at nebula.test.functional.internal.DefaultGradleRunner.handle(DefaultGradleRunner.groovy:40)
+	at nebula.test.IntegrationSpec.launcher(IntegrationSpec.groovy:86)
+	at nebula.test.IntegrationSpec.runTasks(IntegrationSpec.groovy:278)
+	at nebula.test.IntegrationSpec.runTasksSuccessfully(IntegrationSpec.groovy:263)
+	at com.palantir.jacoco.JacocoFullReportPluginTest.jacoco-full-report can exclude sub projects(JacocoFullReportPluginTest.groovy:141)
+</failure>
+  </testcase>
+  <testcase name="jacoco-full-report reports on union of execution data" classname="com.palantir.jacoco.JacocoFullReportPluginTest" time="0.037">
+    <failure message="java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.getClasspathAsFiles(ClasspathAddingInitScriptBuilder.groovy:40)
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.build(ClasspathAddingInitScriptBuilder.groovy:18)
+	at nebula.test.functional.internal.classpath.ClasspathInjectingGradleHandleFactory.start(ClasspathInjectingGradleHandleFactory.groovy:29)
+	at nebula.test.functional.internal.DefaultGradleRunner.handle(DefaultGradleRunner.groovy:40)
+	at nebula.test.IntegrationSpec.launcher(IntegrationSpec.groovy:86)
+	at nebula.test.IntegrationSpec.runTasks(IntegrationSpec.groovy:278)
+	at nebula.test.IntegrationSpec.runTasksSuccessfully(IntegrationSpec.groovy:263)
+	at com.palantir.jacoco.JacocoFullReportPluginTest.jacoco-full-report reports on union of execution data(JacocoFullReportPluginTest.groovy:152)
+</failure>
+  </testcase>
+  <testcase name="jacoco-full-report works when only some subprojects provide execution data" classname="com.palantir.jacoco.JacocoFullReportPluginTest" time="0.019">
+    <failure message="java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.getClasspathAsFiles(ClasspathAddingInitScriptBuilder.groovy:40)
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.build(ClasspathAddingInitScriptBuilder.groovy:18)
+	at nebula.test.functional.internal.classpath.ClasspathInjectingGradleHandleFactory.start(ClasspathInjectingGradleHandleFactory.groovy:29)
+	at nebula.test.functional.internal.DefaultGradleRunner.handle(DefaultGradleRunner.groovy:40)
+	at nebula.test.IntegrationSpec.launcher(IntegrationSpec.groovy:86)
+	at nebula.test.IntegrationSpec.runTasks(IntegrationSpec.groovy:278)
+	at nebula.test.IntegrationSpec.runTasksSuccessfully(IntegrationSpec.groovy:263)
+	at com.palantir.jacoco.JacocoFullReportPluginTest.jacoco-full-report works when only some subprojects provide execution data(JacocoFullReportPluginTest.groovy:166)
+</failure>
+  </testcase>
+  <testcase name="jacocoFullReport object has non-null sourceDirectories even when task did not run" classname="com.palantir.jacoco.JacocoFullReportPluginTest" time="0.016">
+    <failure message="java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: org.gradle.internal.classloader.ClasspathUtil.getClasspath(Ljava/lang/ClassLoader;)Ljava/util/List;
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.getClasspathAsFiles(ClasspathAddingInitScriptBuilder.groovy:40)
+	at nebula.test.functional.internal.classpath.ClasspathAddingInitScriptBuilder.build(ClasspathAddingInitScriptBuilder.groovy:18)
+	at nebula.test.functional.internal.classpath.ClasspathInjectingGradleHandleFactory.start(ClasspathInjectingGradleHandleFactory.groovy:29)
+	at nebula.test.functional.internal.DefaultGradleRunner.handle(DefaultGradleRunner.groovy:40)
+	at nebula.test.IntegrationSpec.launcher(IntegrationSpec.groovy:86)
+	at nebula.test.IntegrationSpec.runTasks(IntegrationSpec.groovy:278)
+	at nebula.test.IntegrationSpec.runTasksSuccessfully(IntegrationSpec.groovy:263)
+	at com.palantir.jacoco.JacocoFullReportPluginTest.jacocoFullReport object has non-null sourceDirectories even when task did not run(JacocoFullReportPluginTest.groovy:194)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Running test from E:\Learning\gradle-jacoco-coverage-new\build\test\com.palantir.jacoco.JacocoFullReportPluginTest\jacoco-full-report-can-exclude-sub-projects
+Running test from E:\Learning\gradle-jacoco-coverage-new\build\test\com.palantir.jacoco.JacocoFullReportPluginTest\jacoco-full-report-reports-on-union-of-execution-data
+Running test from E:\Learning\gradle-jacoco-coverage-new\build\test\com.palantir.jacoco.JacocoFullReportPluginTest\jacoco-full-report-works-when-only-some-subprojects-provide-execution-data
+Running test from E:\Learning\gradle-jacoco-coverage-new\build\test\com.palantir.jacoco.JacocoFullReportPluginTest\jacocoFullReport-object-has-non-null-sourceDirectories-even-when-task-did-not-run
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.palantir.jacoco.JacocoCoverageTaskTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2021-03-15T19:34:56" hostname="DESKTOP-377GUP4" time="0.685">
+  <properties/>
+  <testcase name="Parse sample Jacoco XML Report correctly" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.375"/>
+  <testcase name="No rules imply no violations" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.026"/>
+  <testcase name="When multiple rules fire, then the one with smaller threshold dominates" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.116"/>
+  <testcase name="Coverage thresholds are inclusive lower bound" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.019"/>
+  <testcase name="Rules have no effect on coverage types and classes that they don't apply to" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.008"/>
+  <testcase name="A more specific rule with a higher threshold does not overrule a less specific one with smaller threshold" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.014"/>
+  <testcase name="A more specific rule with a lower threshold overrules a less specific one with higher threshold" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.026"/>
+  <testcase name="Whitelisted files are exempt from coverage requirements" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.03"/>
+  <testcase name="Thresholds can be set for any scope" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.025"/>
+  <testcase name="Any scope can be whitelisted" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.017"/>
+  <testcase name="Thresholds can be defined for all scopes at once" classname="com.palantir.jacoco.JacocoCoverageTaskTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

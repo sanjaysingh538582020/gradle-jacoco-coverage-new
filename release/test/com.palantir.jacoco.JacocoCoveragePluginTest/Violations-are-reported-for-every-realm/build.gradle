@@ -1,0 +1,19 @@
+// Running test for Violations-are-reported-for-every-realm
+
+apply plugin: 'java'
+apply plugin: 'com.palantir.jacoco-coverage'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile "junit:junit:4.11"
+}
+
+jacocoCoverage {
+    fileThreshold 1.0, LINE, "HelloWorld.java"
+    classThreshold 1.0, LINE, "nebula/hello/HelloWorld"
+    packageThreshold 1.0, LINE, "nebula/hello"
+    reportThreshold 1.0, LINE, "Violations-are-reported-for-every-realm"
+}
