@@ -1,3 +1,0 @@
-rootProject.name='jacoco-full-report-reports-on-union-of-execution-data'
-include 'testFooA'
-include 'testFooB'
