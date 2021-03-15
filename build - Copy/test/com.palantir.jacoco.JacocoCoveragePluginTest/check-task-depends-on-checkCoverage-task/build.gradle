@@ -1,0 +1,12 @@
+// Running test for check-task-depends-on-checkCoverage-task
+
+apply plugin: 'java'
+apply plugin: 'com.palantir.jacoco-coverage'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile "junit:junit:4.11"
+}

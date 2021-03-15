@@ -1,0 +1,2 @@
+rootProject.name='jacocoFullReport-object-has-non-null-sourceDirectories-even-when-task-did-not-run'
+include 'testFooA'

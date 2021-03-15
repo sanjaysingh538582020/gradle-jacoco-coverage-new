@@ -1,0 +1,16 @@
+// Running test for checkCoverage-succeeds-when-no-coverage-is-required
+
+apply plugin: 'java'
+apply plugin: 'com.palantir.jacoco-coverage'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile "junit:junit:4.11"
+}
+
+jacocoCoverage {
+    fileThreshold 0.0
+}

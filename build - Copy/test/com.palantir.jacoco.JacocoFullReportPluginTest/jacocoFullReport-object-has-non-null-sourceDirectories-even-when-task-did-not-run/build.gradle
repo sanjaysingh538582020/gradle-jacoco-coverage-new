@@ -1,0 +1,26 @@
+// Running test for jacocoFullReport-object-has-non-null-sourceDirectories-even-when-task-did-not-run
+apply plugin: "com.palantir.jacoco-full-report"
+allprojects {
+    apply plugin: 'java'
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        testCompile "junit:junit:4.11"
+    }
+}
+
+// Java source directories are unknown before sub project is evaluated.
+assert tasks.jacocoFullReport.sourceDirectories.size() == 0
+
+project.afterEvaluate {
+    assert tasks.jacocoFullReport.sourceDirectories.size() == 1
+}
+
+task afterTest() {
+    dependsOn tasks.test
+    doLast {
+        assert tasks.jacocoFullReport.sourceDirectories.size() == 1
+    }
+}
