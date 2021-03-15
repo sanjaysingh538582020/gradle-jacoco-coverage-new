@@ -1,3 +1,0 @@
-rootProject.name='jacoco-full-report-can-exclude-sub-projects'
-include 'testFooA'
-include 'testFooB'
