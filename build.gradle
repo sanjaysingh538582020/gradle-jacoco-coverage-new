@@ -22,6 +22,8 @@ sonarqube {
   }
 }
 
+tasks['sonarqube'].dependsOn test
+
 apply plugin: 'groovy'
 apply plugin: 'idea'
 apply plugin: 'maven'
@@ -56,7 +58,20 @@ task sourceJar(type: Jar) {
     from sourceSets.main.allSource
     classifier 'sources'
 }
+task codeCoverageReport(type: JacocoReport) {
+    executionData fileTree(project.rootDir.absolutePath).include("**/build/jacoco/*.exec")
 
+    subprojects.each {
+        sourceSets it.sourceSets.main
+    }
+
+    reports {
+        xml.enabled true
+        xml.destination file("${buildDir}/reports/jacoco/report.xml")
+        html.enabled false
+        csv.enabled false
+    }
+}
 publishing {
     publications {
         PluginPublication(MavenPublication) {
